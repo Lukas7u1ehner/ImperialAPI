@@ -9,4 +9,11 @@ public class ConverterController {
     public double inch(@RequestParam double a){
         return (a * 2.54);
     }
+
+
+@RequestMapping("/yard")
+    public double yard(@RequestParam double b){
+        return b/1.094;
+    }
+
 }
